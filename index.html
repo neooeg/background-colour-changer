@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	.container {
+		display:  flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:  100vh;
+	}
+
+	.innercontainer {
+		display: flex;
+		max-height: 300px;
+		max-width: 600px;
+		padding: 5px;
+		background-color: white;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-radius: 20px;
+	}
+
+	h1, p {
+		font-family: 'Arial';
+	}
+	h1 {
+		font-size: 40px;
+	}
+</style>
+
+<head>
+<title>Colour changer</title>
+</head>
+
+<body>
+<div class="container">
+<div class="innercontainer">
+<h1>Choose a background colour</h1>
+<p id="demo">Current background colour: #ffffff</p>
+<input type="color" id="myColor" value="#ffffff"><br>
+<button id="btn" type="button" onclick="myFunction()">Click me</button>
+</div>
+</div>
+
+<script>
+
+function myFunction() {
+  let x = document.getElementById("myColor").value;
+  document.body.style.backgroundColor = x;
+  document.getElementById("demo").innerHTML = 'Current background colour: ' + x;
+}
+
+</script>
+
+</body>
+
+</html>
