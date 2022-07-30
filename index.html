@@ -5,23 +5,19 @@
 	.container {
 		display:  flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height:  100vh;
+		position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform:  Translate(-50%, -50%);
+    margin: auto;
+    max-width: 600px;
+    max-height: 400px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
 	}
 
-	.innercontainer {
-		display: flex;
-		max-height: 300px;
-		max-width: 600px;
-		padding: 5px;
-		background-color: white;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		border-radius: 20px;
-	}
 
 	h1, p {
 		font-family: 'Arial';
@@ -40,7 +36,7 @@
 <div class="innercontainer">
 <h1>Choose a background colour</h1>
 <p id="demo">Current background colour: #ffffff</p>
-<input type="color" id="myColor" value="#ffffff"><br>
+<input type="color" id="myColor" value="#ffffff"><br><br>
 <button id="btn" type="button" onclick="myFunction()">Click me</button>
 </div>
 </div>
